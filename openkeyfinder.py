@@ -2,7 +2,7 @@ import requests
 import re
 import openai
 
-GITHUB_COOKIE_SESSION = "" #<---- HERE
+GITHUB_COOKIE_SESSION = input("Enter your Github Cookie Session: ") #<---- HERE
 
 print("""
 \033[94m 
@@ -47,5 +47,6 @@ for match in matches:
         elif "Incorrect API key" in str(e):
             print(f"{match}: API key is:\033[91m NOT VALID\033[00m")
         else:
-            #print(str(e))
+            print(str(e))
             print(f"{match}: Unkwon error")
+            breakpoint()    

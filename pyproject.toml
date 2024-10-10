@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "openkeyfinder"
+version = "0.1.0"
+description = ""
+authors = ["ARIF ALI DAWOOD <arifalidawood@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+openai = "^1.51.2"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
